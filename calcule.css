@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(56, 87, 87);
+}
+
+.header {
+    background-color: rgb(69, 114, 99);
+    color: azure;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.meio{
+    font-size: 20px;
+    display:flex;
+    align-content: center;
+    max-width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
+.tit2 {
+    display: flex;
+    justify-content: center;
+    font-size: 180%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.boxs{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+input {
+    width: 80px;
+    padding: 15px;
+
+}
+
+.inputs {
+    text-align: center;
+}
+
+button{
+    padding: 15px;
+    font-size: 20px;    
+}
+
+.calcule{
+    margin: 20px auto;
+    display: flex;
+
+}    
+
+.classificar{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+
+.resultado{
+    justify-content: center;
+    font-size: 40px;
+    display: flex;
+    margin: auto ;
+}
+
+.supremo{
+    background-color: rgb(22, 145, 100);
+    max-width: 45%;;
+    margin: 40px auto;
+    color: azure;
+    border-radius: 4px;
+}

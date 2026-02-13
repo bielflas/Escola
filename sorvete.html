@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorvete</title>
+    <link rel="stylesheet" href="sorvete.css">
+</head>
+<body>
+    <div class="header">
+    <h1 class="padding">Lista de sabores </h1>
+    
+    </div>
+
+    <div class="sabores">
+        <ul>
+    <h1>Sabores</h1>
+    <li>Morango
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li> 
+
+    <li>Chocolate
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li>
+
+    <li>Coco
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li>
+    <li>Cajá
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li> 
+    <li>Doce de leite
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li> 
+    <li>Tapica
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li> 
+    <li>Flocos
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li> 
+    <li>Maracuja 
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li>
+    <li>Creme
+        <button onclick="adicionarValor(3)">3R$</button>
+    </li> 
+        
+        <h3>Total R$<span id="tudo">0</span></h3> 
+        <button id="finalizacao"> Comprar </button>
+        </ul>
+    </div>
+
+
+<script>
+            let total = 0; 
+        function adicionarValor(valor){
+    
+                total += valor;
+                document.getElementById('tudo').textContent = total;
+        }
+
+        document.getElementById('finalizacao').addEventListener('click', function() {
+            if (total > 0){
+                alert(`compra realizada! Total: R$${total.toFixed(2)}`);
+                total = 0;
+                document.getElementById('tudo').textContent = total;
+            } else {
+                alert('Deu errado');
+            }
+        });
+</script>
+</body>
+</html>

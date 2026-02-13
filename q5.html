@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Imagem</title>
+</head>
+<body>
+
+<img id="imagem" src="imagem1.jpg"  width="300">
+<button onclick="trocarImagem()">Trocar Imagem</button>
+
+<script>
+    function trocarImagem() {
+        var img = document.getElementById("imagem");
+        if (img.src.includes("imagem1.jpg")) {
+            img.src = "https://img.freepik.com/fotos-gratis/close-de-um-gatinho-fofo-surpreso-e-fofo_181624-46420.jpg";
+        } else {
+            img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLkYNEvbWQYKEJcK2LshMCDWRiZ0lZqNRB0Dz_oO0ASSyZlXAGTL6252U4MMZdz-l6S3w&usqp=CAU";
+        }
+    }
+</script>
+
+</body>
+</html>

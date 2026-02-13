@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Cor do Texto</title>
+    <style>
+        #texto {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<p id="texto">Clique no botão para mudar minha cor!</p>
+<button onclick="mudarCor()">Mudar Cor</button>
+
+<script>
+    function mudarCor() {
+        var texto = document.getElementById("texto");
+        texto.style.color = "red";
+    }
+</script>
+
+</body>
+</html>

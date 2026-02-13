@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo!</title>
+
+</head>
+<body>
+
+<input type="text" id="nome" placeholder="Digite seu nome">
+<button onclick="saudarUsuario()">Entrar</button>
+
+<p id="mensagem"></p>
+
+<script>
+    function saudarUsuario() {
+        var nome = document.getElementById("nome").value.trim(); 
+        var mensagem = document.getElementById("mensagem");
+
+        if (nome === "") {
+            mensagem.textContent = "Por favor, digite seu nome!";
+        } else {
+            mensagem.textContent = "Bem-vindo, " + nome + "!";
+        }
+    }
+</script>
+
+</body>
+</html>

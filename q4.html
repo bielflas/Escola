@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Vários Textos</title>
+   
+</head>
+<body>
+
+<p id="texto1">Texto 1 original</p>
+<p id="texto2">Texto 2 original</p>
+<p id="texto3">Texto 3 original</p>
+
+<button onclick="mudarTextos()">Mudar Todos os Textos</button>
+
+<script>
+    function mudarTextos() {
+        document.getElementById("texto1").textContent = "novo texto do primeiro parágrafo!";
+        document.getElementById("texto2").textContent = "Novo texto do segundo parágrafo!";
+        document.getElementById("texto3").textContent = "Novo texto do terceiro parágrafo!";
+    }
+</script>
+
+</body>
+</html>
